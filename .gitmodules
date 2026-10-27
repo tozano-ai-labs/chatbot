@@ -1,0 +1,6 @@
+[submodule ".ai-template"]
+	path = .ai-template
+	url = https://github.com/tozano-ai-labs/ai-template.git
+	branch = main
+[submodule "ai-template"]
+	branch = main

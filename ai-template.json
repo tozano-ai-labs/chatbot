@@ -1,0 +1,34 @@
+{
+  "//": "Déclaration de la version du template utilisée par ce projet. À committer dans le projet : c'est ce qui rend la version lisible par un humain et vérifiable par un agent. Le verrou réel est le commit du sous-module.",
+
+  "template": {
+    "repo": "https://github.com/tozano-ai-labs/ai-template.git",
+    "path": ".ai-template",
+    "branche": "main",
+    "version_attendue": "v1.0.0",
+    "version_attendue_comment": "Tag git correspondant. Aucune version published tant que le tag n'existe pas : vérifier avec git -C .ai-template describe --tags."
+  },
+
+  "profils_actifs": [
+    "node-vitest"
+  ],
+
+  "etats": {
+    "rgpd": "docs/rgpd/etat.yml"
+  },
+
+  "agents": [
+    "architecte",
+    "dev",
+    "reviewer",
+    "test-writer",
+    "security-auditor",
+    "docs-writer",
+    "committer"
+  ],
+
+  "skills": [
+    "commit-message",
+    "pre-release"
+  ]
+}

@@ -1,0 +1,131 @@
+# Modèle d'état RGPD d'un projet
+#
+# À copier vers docs/rgpd/etat.yml dans le projet consommateur, puis à remplir.
+# Ce fichier ne contient que l'état du projet : les questions, les preuves attendues et
+# les articles cités viennent de .ai-template/docs/rgpd/checklist.yml.
+#
+# Ne pas modifier checklist.yml ni CHECKLIST.md : ils appartiennent au template.
+
+meta:
+  # Version de ai-template dont la checklist a servi de référence.
+  # À mettre à jour à chaque mise à jour du sous-module.
+  template_version: 1.0.0
+  # Date de la dernière revue, format AAAA-MM-JJ.
+  revu_le: null
+  # Qui a fait la revue.
+  revu_par: null
+  # Réponse lisible par l'auditeur : où est le registre des traitements,
+  # la politique de confidentialité, la procédure de violation.
+  documents:
+    registre_traitements: null
+    politique_confidentialite: null
+    procedure_violation: null
+
+# Notes libres sur le projet, utiles en tête de rapport.
+contexte: |
+  Projet :
+  Données personnelles traitées :
+  Appel à un modèle : oui / non — si oui, hébergement local ou fournisseur externe :
+  Points connus non traités :
+
+# Un statut par item, avec son identifiant exact issu de checklist.yml.
+#
+#   statut: a_verifier | conforme | non_conforme | non_applicable
+#   note:   pourquoi c'est conforme, ou ce qui manque si ce n'est pas conforme
+#   preuve: où l'on peut constater le point dans le projet ou dans un document
+#   verifie_le: AAAA-MM-JJ
+#
+# Un item absent de cette liste vaut a_verifier. Inutile donc de recopier les
+# 84 items : ne lister que ceux qui ont été examinés.
+etat:
+  # --- Finalités et périmètre ---
+  RGPD-FIN-01:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  RGPD-FIN-04:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  # --- Bases légales ---
+  RGPD-BL-01:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  # --- Conservation ---
+  RGPD-CON-01:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  RGPD-CON-02:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  # --- Droits des personnes ---
+  RGPD-DRT-03:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  # --- Sécurité ---
+  RGPD-SEC-03:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  RGPD-SEC-07:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  # --- Gouvernance ---
+  RGPD-GOV-01:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  RGPD-GOV-02:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  # --- Systèmes IA ---
+  # À ne remplir que si le projet appelle un modèle.
+  RGPD-IA-01:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  RGPD-IA-05:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  RGPD-IA-08:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
+
+  RGPD-IA-09:
+    statut: a_verifier
+    note: null
+    preuve: null
+    verifie_le: null
