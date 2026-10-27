@@ -1,0 +1,23 @@
+services:
+  chatbot:
+    build:
+      context: .
+      args:
+        VITE_APP_VERSION: ${VERSION:-0.1}
+    image: chatbot:${VERSION:-0.1}
+    container_name: chatbot
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      APP_VERSION: ${VERSION:-0.1}
+      OLLAMA_HOST: ${OLLAMA_HOST:-http://ollama:11434}
+      PORT: "3000"
+    ports:
+      - "${PORT:-3000}:3000"
+    networks:
+      - ai-service
+
+networks:
+  ai-service:
+    external: true
+    name: ai-service-net
