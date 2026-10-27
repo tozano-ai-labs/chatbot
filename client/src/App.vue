@@ -40,8 +40,8 @@ async function send() {
   error.value = "";
   input.value = "";
   messages.value.push({ role: "user", content: text });
-  const reply = { role: "assistant", content: "" };
-  messages.value.push(reply);
+  messages.value.push({ role: "assistant", content: "" });
+  const reply = messages.value[messages.value.length - 1];
   streaming.value = true;
   scrollToBottom();
 
